@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mouhamed Sall — Développeur junior web et mobile. Étudiant passionné, spécialisé en HTML, CSS, JavaScript, Java, Python et GitHub.">
+  <meta name="author" content="Mouhamed Sall">
+  <meta name="theme-color" content="#0b0f19">
+  <title>Mouhamed Sall — Développeur junior Web & Mobile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <span class="loader-mark">MS</span>
+      <span class="loader-text">Chargement</span>
+    </div>
+  </div>
+
+  <!-- ========== BARRE DE PROGRESSION ========== -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ========== CURSEUR PERSONNALISÉ ========== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#home" class="logo" data-nav="home">
+        <span class="logo-mark">
+          <span>MS</span>
+        </span>
+        <span class="logo-text">Mouhamed Sall</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link active" data-nav="home">Accueil</a>
+        <a href="#about" class="nav-link" data-nav="about">À propos</a>
+        <a href="#skills" class="nav-link" data-nav="skills">Compétences</a>
+        <a href="#work" class="nav-link" data-nav="work">Projets</a>
+        <a href="#contact" class="nav-link nav-cta" data-nav="contact">Contact</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         SECTION HERO
+    ============================================================ -->
+    <section class="section hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-status reveal">
+          <span class="status-dot"></span>
+          <span>Disponible pour missions &amp; stages</span>
+        </div>
+
+        <h1 class="hero-title reveal">
+          <span class="line">
+            <span class="word">Étudiant</span>
+          </span>
+          <span class="line">
+            <span class="word"><em>développeur junior</em></span>
+          </span>
+          <span class="line">
+            <span class="word">web &amp; mobile.</span>
+          </span>
+        </h1>
+
+        <div class="hero-grid reveal">
+          <div class="hero-col">
+            <p class="hero-lead">
+              Je conçois des applications web et mobiles simples, fiables
+              et pensées pour l'utilisateur final. Actuellement en apprentissage
+              continu des technologies du numérique.
+            </p>
+            <div class="hero-actions">
+              <a href="#work" class="btn btn-primary">
+                Voir mes projets
+                <span class="btn-arrow">→</span>
+              </a>
+              <a href="#contact" class="btn btn-outline">Me contacter</a>
+            </div>
+          </div>
+
+          <div class="hero-col hero-col-meta">
+            <dl class="meta-list">
+              <div class="meta-item">
+                <dt>Nom</dt>
+                <dd>Mouhamed Sall</dd>
+              </div>
+              <div class="meta-item">
+                <dt>Rôle</dt>
+                <dd>Développeur en formation</dd>
+              </div>
+              <div class="meta-item">
+                <dt>Localisation</dt>
+                <dd>Yeumbeul, Dakar, Sénégal,</dd>
+              </div>
+              <div class="meta-item">
+                <dt>Langues</dt>
+                <dd>Français, Wolof, Anglais,</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <!-- Bandeau techno défilant -->
+        <div class="marquee reveal" aria-hidden="true">
+          <div class="marquee-track">
+            <span class="marquee-item">
+              <span class="marquee-num">01</span>
+              <span class="marquee-name">HTML</span>
+            </span>
+            <span class="marquee-sep"></span>
+            <span class="marquee-item">
+              <span class="marquee-num">02</span>
+              <span class="marquee-name">CSS</span>
+            </span>
+            <span class="marquee-sep"></span>
+            <span class="marquee-item">
+              <span class="marquee-num">03</span>
+              <span class="marquee-name">JavaScript</span>
+            </span>
+            <span class="marquee-sep"></span>
+            <span class="marquee-item">
+              <span class="marquee-num">04</span>
+              <span class="marquee-name">Java</span>
+            </span>
+            <span class="marquee-sep"></span>
+            <span class="marquee-item">
+              <span class="marquee-num">05</span>
+              <span class="marquee-name">Python</span>
+            </span>
+            <span class="marquee-sep"></span>
+            <span class="marquee-item">
+              <span class="marquee-num">06</span>
+              <span class="marquee-name">GitHub</span>
+            </span>
+            <span class="marquee-sep"></span>
+            <span class="marquee-item">
+              <span class="marquee-num">01</span>
+              <span class="marquee-name">HTML</span>
+            </span>
+            <span class="marquee-sep"></span>
+            <span class="marquee-item">
+              <span class="marquee-num">02</span>
+              <span class="marquee-name">CSS</span>
+            </span>
+            <span class="marquee-sep"></span>
+            <span class="marquee-item">
+              <span class="marquee-num">03</span>
+              <span class="marquee-name">JavaScript</span>
+            </span>
+            <span class="marquee-sep"></span>
+            <span class="marquee-item">
+              <span class="marquee-num">04</span>
+              <span class="marquee-name">Java</span>
+            </span>
+            <span class="marquee-sep"></span>
+            <span class="marquee-item">
+              <span class="marquee-num">05</span>
+              <span class="marquee-name">Python</span>
+            </span>
+            <span class="marquee-sep"></span>
+            <span class="marquee-item">
+              <span class="marquee-num">06</span>
+              <span class="marquee-name">GitHub</span>
+            </span>
+            <span class="marquee-sep"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION À PROPOS
+    ============================================================ -->
+    <section class="section about" id="about">
+      <div class="section-container">
+        <div class="section-head reveal">
+          <span class="section-label">01 — À propos</span>
+          <h2 class="section-title">Un parcours guidé par la curiosité et la pratique.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="lead">
+              Je m'appelle <strong>Mouhamed Sall</strong>, étudiant passionné
+              par le développement d'applications web et mobiles. J'aime
+              transformer des idées en produits concrets, avec une attention
+              particulière portée à la simplicité, à la performance et à
+              l'expérience utilisateur.
+            </p>
+            <p>
+              Au fil de mes projets personnels et académiques, j'ai appris à
+              travailler avec rigueur, à résoudre des problèmes techniques
+              et à collaborer efficacement. Mon objectif est de continuer à
+              progresser et à livrer des solutions numériques utiles et bien
+              conçues.
+            </p>
+            <p>
+              Je suis actuellement à la recherche d'opportunités pour mettre
+              mes compétences en pratique et contribuer à des projets ambitieux,
+              que ce soit en stage, en freelance ou en collaboration.
+            </p>
+          </div>
+
+          <div class="about-side reveal">
+            <div class="stat-block">
+              <span class="stat-num" data-count="6">0</span>
+              <span class="stat-label">Technologies maîtrisées</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-num" data-count="4">0</span>
+              <span class="stat-label">Projets réalisés</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-num" data-count="3">0</span>
+              <span class="stat-label">Types de services</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-num" data-count="100">0</span>
+              <span class="stat-label">% Engagement</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION COMPÉTENCES
+    ============================================================ -->
+    <section class="section skills" id="skills">
+      <div class="section-container">
+        <div class="section-head reveal">
+          <span class="section-label">02 — Compétences</span>
+          <h2 class="section-title">Les technologies que je pratique.</h2>
+          <p class="section-sub">
+            Des bases solides sur les langages et outils essentiels du
+            développement web et applicatif, enrichies par des projets concrets.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- HTML -->
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-logo skill-logo-html">
+              <span class="logo-initials">01</span>
+              <span class="logo-code">HTML</span>
+            </div>
+            <h3 class="skill-title">HTML</h3>
+            <p class="skill-desc">Structure sémantique et accessible, balisage propre orienté SEO.</p>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+            <span class="skill-pct">90 %</span>
+          </article>
+
+          <!-- CSS -->
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-logo skill-logo-css">
+              <span class="logo-initials">02</span>
+              <span class="logo-code">CSS</span>
+            </div>
+            <h3 class="skill-title">CSS</h3>
+            <p class="skill-desc">Mise en page responsive, design moderne, animations et variables CSS.</p>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+            <span class="skill-pct">85 %</span>
+          </article>
+
+          <!-- JavaScript -->
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-logo skill-logo-js">
+              <span class="logo-initials">03</span>
+              <span class="logo-code">JS</span>
+            </div>
+            <h3 class="skill-title">JavaScript</h3>
+            <p class="skill-desc">Interactions dynamiques, manipulation du DOM et logique applicative.</p>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+            <span class="skill-pct">80 %</span>
+          </article>
+
+          <!-- Java -->
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-logo skill-logo-java">
+              <span class="logo-initials">04</span>
+              <span class="logo-code">JAVA</span>
+            </div>
+            <h3 class="skill-title">Java</h3>
+            <p class="skill-desc">Programmation orientée objet, applications desktop et logique métier.</p>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="70"></div>
+            </div>
+            <span class="skill-pct">70 %</span>
+          </article>
+
+          <!-- Python -->
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-logo skill-logo-python">
+              <span class="logo-initials">05</span>
+              <span class="logo-code">PY</span>
+            </div>
+            <h3 class="skill-title">Python</h3>
+            <p class="skill-desc">Scripts, automatisation et premiers pas dans le développement backend.</p>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="75"></div>
+            </div>
+            <span class="skill-pct">75 %</span>
+          </article>
+
+          <!-- GitHub -->
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-logo skill-logo-git">
+              <span class="logo-initials">06</span>
+              <span class="logo-code">GIT</span>
+            </div>
+            <h3 class="skill-title">GitHub</h3>
+            <p class="skill-desc">Gestion de versions, collaboration et publication de projets en ligne.</p>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+            <span class="skill-pct">80 %</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION SERVICES
+    ============================================================ -->
+    <section class="section services">
+      <div class="section-container">
+        <div class="section-head reveal">
+          <span class="section-label">03 — Services</span>
+          <h2 class="section-title">Ce que je réalise.</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service reveal">
+            <span class="service-num">A</span>
+            <h3 class="service-title">Applications web</h3>
+            <p class="service-desc">
+              Sites et applications sur mesure : interfaces claires, navigation
+              fluide et code maintenable. Vitrines, tableaux de bord ou outils métier.
+            </p>
+            <ul class="service-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="service reveal">
+            <span class="service-num">B</span>
+            <h3 class="service-title">Portfolios</h3>
+            <p class="service-desc">
+              Portfolios professionnels pour étudiants, freelances et créatifs.
+              Design épuré, mise en valeur des projets et formulaire de contact.
+            </p>
+            <ul class="service-tags">
+              <li>Design</li>
+              <li>Responsive</li>
+              <li>SEO</li>
+            </ul>
+          </article>
+
+          <article class="service reveal">
+            <span class="service-num">C</span>
+            <h3 class="service-title">E-commerce</h3>
+            <p class="service-desc">
+              Boutiques en ligne simples : catalogue produits, panier interactif,
+              pages détail et tunnel de commande optimisé pour la conversion.
+            </p>
+            <ul class="service-tags">
+              <li>Catalogue</li>
+              <li>Panier</li>
+              <li>Paiement</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION PROJETS
+    ============================================================ -->
+    <section class="section work" id="work">
+      <div class="section-container">
+        <div class="section-head reveal">
+          <span class="section-label">04 — Projets</span>
+          <h2 class="section-title">Quelques réalisations récentes.</h2>
+          <p class="section-sub">
+            Une sélection de projets personnels et académiques illustrant mon
+            travail sur le web, le mobile et l'e-commerce.
+          </p>
+        </div>
+
+        <div class="work-filters reveal">
+          <button class="filter-btn active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+          <button class="filter-btn" data-filter="tool">Outils</button>
+        </div>
+
+        <div class="work-grid" id="workGrid">
+          <article class="project reveal" data-category="web">
+            <div class="project-visual pv-1">
+              <span class="project-tag">Web</span>
+              <span class="project-index">01</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Portfolio personnel</h3>
+              <p class="project-desc">
+                Site portfolio responsive conçu avec HTML, CSS et JavaScript.
+                Mise en page soignée et formulaire de contact.
+              </p>
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="ecommerce">
+            <div class="project-visual pv-2">
+              <span class="project-tag">E-commerce</span>
+              <span class="project-index">02</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Boutique en ligne</h3>
+              <p class="project-desc">
+                Catalogue produits avec filtres, panier interactif et calcul du
+                total en temps réel.
+              </p>
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="mobile">
+            <div class="project-visual pv-3">
+              <span class="project-tag">Mobile</span>
+              <span class="project-index">03</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Application mobile</h3>
+              <p class="project-desc">
+                Prototype d'application mobile avec gestion de données locales
+                et interface adaptée aux petits écrans.
+              </p>
+              <ul class="project-tech">
+                <li>Java</li>
+                <li>Python</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="tool">
+            <div class="project-visual pv-4">
+              <span class="project-tag">Outil</span>
+              <span class="project-index">04</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Gestion de tâches</h3>
+              <p class="project-desc">
+                Outil web pour organiser ses tâches : création, priorisation,
+                sauvegarde locale et interface minimaliste.
+              </p>
+              <ul class="project-tech">
+                <li>JavaScript</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION CONTACT
+    ============================================================ -->
+    <section class="section contact" id="contact">
+      <div class="section-container">
+        <div class="section-head reveal">
+          <span class="section-label">05 — Contact</span>
+          <h2 class="section-title">Travaillons ensemble.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="contact-lead">
+              Vous avez un projet, une opportunité ou simplement une question ?
+              N'hésitez pas à me contacter, je réponds rapidement.
+            </p>
+
+            <ul class="contact-list">
+              <li class="contact-item">
+                <span class="contact-label">Téléphone</span>
+                <a href="tel:+221779872822" class="contact-value">77 987 28 22</a>
+              </li>
+              <li class="contact-item">
+                <span class="contact-label">Email</span>
+                <a href="mailto:mouhamadsall2004@gmail.com" class="contact-value">mouhamadsall2004@gmail.com</a>
+              </li>
+              <li class="contact-item">
+                <span class="contact-label">Instagram</span>
+                <a href="https://instagram.com/mouhamad__sall" target="_blank" rel="noopener" class="contact-value">@mouhamad__sall</a>
+              </li>
+            </ul>
+
+            <div class="contact-social">
+              <a href="https://instagram.com/mouhamad__sall" target="_blank" rel="noopener" class="social-link">
+                <span class="social-num">IG</span>
+                <span>Instagram</span>
+              </a>
+              <a href="mailto:mouhamedsall2004@gmail.com" class="social-link">
+                <span class="social-num">EM</span>
+                <span>Email</span>
+              </a>
+              <a href="tel:+221779872822" class="social-link">
+                <span class="social-num">TL</span>
+                <span>Téléphone</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="nom">Nom complet *</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+              </div>
+              <div class="form-field">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="sujet">Sujet</label>
+              <input type="text" id="sujet" name="sujet" placeholder="Objet de votre message">
+            </div>
+            <div class="form-field">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou votre demande..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Envoyer le message
+              <span class="btn-arrow">→</span>
+            </button>
+            <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">
+          <span>MS</span>
+        </span>
+        <div>
+          <strong>Mouhamed Sall</strong>
+          <p>Étudiant — Développeur junior web &amp; mobile</p>
+        </div>
+      </div>
+
+      <ul class="footer-nav">
+        <li><a href="#home" data-nav="home">Accueil</a></li>
+        <li><a href="#about" data-nav="about">À propos</a></li>
+        <li><a href="#skills" data-nav="skills">Compétences</a></li>
+        <li><a href="#work" data-nav="work">Projets</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-bottom">
+        <p>© 2026 Tous droits réservés.</p>
+        <p>Conçu et développé avec passion.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <span>↑</span>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>
